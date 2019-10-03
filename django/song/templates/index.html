@@ -1,0 +1,53 @@
+<!Doctype html>
+{% load static %}
+<head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link href="{% static 'TitleIcon.png' %}" rel="icon" type="png">
+    <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css">
+    <title></title>
+</head>
+
+<body>
+    <div class="background">
+        {% for i in songs %}
+        <nav>
+            <li id="logo"></li>
+            <li id="name">{{ i.name }}</li>
+            <li id="artist">{{ i.artist }}</li>
+            <li id="current-time"></li>
+        </nav>
+        <div class="half first">
+          <div id="disk-rotate" style="background-image:url({% static '520299.jpg' %})">
+              <div id="gold">
+                  <div id="black">
+                  </div>
+              </div>
+          </div>
+          <div id="totalTime">
+            <div id="currentTime"></div>
+          </div>
+            <div class="ctrls">
+              <button id="button3" onclick="backbutton()" type="button">prev</button>
+            <button id="button1" onclick="playpause()" type="button">play</button>
+
+            <button id="button2" onclick="nextbutton()" type="button">next</button>
+            <audio id="audio1" ><source src={% static i.address %} type="audio/mp3">
+              Doesn't support
+            </audio>
+            {% endfor %}
+
+          </div>
+        </div>
+        <div class="half second">
+            <ul>
+                {% for song in songs %}
+                <li id="songs">{{ song.name }} ft. {{song.artist}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script src="{% static 'script.js' %}"></script>
+
+</html>

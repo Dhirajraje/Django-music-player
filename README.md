@@ -2,7 +2,7 @@
 music player in django plays music from /static/ directory of your project
 
 This is our TE mini-project
-contributers
+    - contributers
 
 ```javascript
 {

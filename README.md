@@ -9,6 +9,6 @@ This is our TE mini-project
     "Dhiraj_Salunke" : "https://github.com/Dhirajraje",
     "Rutuja_Awate" : "https://github.com/Awaterutuja",
     "Sarita_Karale" : "https://github.com/Sarita-k1",
-    "Mukesh_Parekar" : Undefined,
+    "Mukesh_Parekar" : "https://github.com/Mukesh7899",
 }
 ```
